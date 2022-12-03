@@ -38,19 +38,19 @@ function ContactForm() {
 
 return (
     <section class="justify-content-center" id="contact-section">
-        <h1 data-testid='h1tag' className="contact">Contact: Morgan Kelly</h1>
+        <h1 data-testid='h1tag' className="contact">contact: josephDeWoody</h1>
         <hr></hr>
         <form class="justify-content-center" id="contact-form">
             <div>
-                <label htmlFor="name">NAME:</label>
+                <label htmlFor="name">name:</label>
                 <input class="form-control" type="text" name="name"  defaultValue={name} onBlur={handleChange}/>
             </div>
             <div >
-                <label htmlFor="email">EMAIL:</label>
+                <label htmlFor="email">email:</label>
                 <input class="form-control" type="email"  name="email" defaultValue={email} onBlur={handleChange} />
             </div>
             <div>
-                <label htmlFor="message">MESSAGE:</label>
+                <label htmlFor="message">message:</label>
                 <textarea class="form-control" name="message" defaultValue={message} onBlur={handleChange} rows="7" />
             </div> 
             {errorMessage && (
