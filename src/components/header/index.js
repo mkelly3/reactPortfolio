@@ -1,17 +1,14 @@
-import React  from 'react';
+import React from "react";
+import About from '../about'
 import {
     HashRouter as Router,
     Switch,
     Route,
     Redirect
 } from "react-router-dom";
-import About from '../about';
-import Portfolio from '../Portfolio';
-import Contact from '../contact';
-import Resume from '../Resume';
-import NavBar from '../navigation';
+import NavBar from '../navigation'
 
-function Header() {
+function header(){
     return (
         <Router>
             <NavBar/>
@@ -22,14 +19,9 @@ function Header() {
                 <Route path="/about">
                     <About />
                 </Route>
-                <Route path="/Portfolio" component={Portfolio} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/resume">
-                    <Resume />
-                </Route>
             </Switch>
         </Router>
     )
 }
 
-export default Header;
+export default header;
