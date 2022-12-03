@@ -1,11 +1,12 @@
 import React from 'react';
-
+import mkphoto from '../../assets/mkphoto'
 
 function About() {
     return (
         <div className ="about">
             <div>
             <h1 className='name'>Morgan Kelly</h1>
+            <img className='me' src={mkphoto} alt="me" />
             <p> Software Developer with a demonstrated history of working on production web and mobile applications. Deep
                 understanding and technical expertise in Computer Science fundamentals, Javascript, ReactJS, NodeJS, MongoDB, CSS,
                 HTML and other technologies.</p>
